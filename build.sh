@@ -1,0 +1,1 @@
+docker run --rm  -v D:\\DEV\\GIT_PROJECTS\\helix-grimoire-app:/usr/src/helix -w /usr/src/helix rust:1.50.0 cargo build --release
