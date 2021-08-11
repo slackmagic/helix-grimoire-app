@@ -5,4 +5,28 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+name="helix_grimoire_domain"
+
 [dependencies]
+## Error management
+thiserror = "1.0"
+
+##SERIALIZATION TO JSON
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+json = "*"
+
+##DATA UTILS => UTC Date, UUID generation
+uuid = { version = "0.8", features = ["v5", "serde"]}
+chrono = { version = "^0.4", features = ["serde"] }
+
+meilisearch-sdk = "0.9.0"
+sled = "0.34.6"
+
+##Password hashing
+rust-crypto = "^0.2"
+async-trait = "0.1.48"
+
+
